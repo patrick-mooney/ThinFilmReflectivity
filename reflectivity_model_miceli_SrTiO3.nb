@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     67742,       1723]
-NotebookOptionsPosition[     66631,       1692]
-NotebookOutlinePosition[     67217,       1712]
-CellTagsIndexPosition[     67174,       1709]
+NotebookDataLength[     68080,       1545]
+NotebookOptionsPosition[     67389,       1522]
+NotebookOutlinePosition[     67975,       1542]
+CellTagsIndexPosition[     67932,       1539]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -29,7 +29,8 @@ Cell[BoxData[{
    "classical", " ", "electron", " ", "radius", " ", "in", " ", "Angstroms"}],
     "*)"}]}], "\n", 
  RowBox[{
-  RowBox[{"defPolFactor", "=", "4230"}], ";", " ", 
+  RowBox[{
+   RowBox[{"defPolFactor", "=", "4230"}], ";"}], " ", 
   RowBox[{"(*", 
    RowBox[{
     RowBox[{"polarization", " ", "factor", " ", 
@@ -38,22 +39,27 @@ Cell[BoxData[{
     ",", 
     RowBox[{
     "can", " ", "basically", " ", "be", " ", "constant", " ", "might", " ", 
-     "be", " ", "function", " ", "of", " ", "theta"}]}], "*)"}], 
-  "\[IndentingNewLine]", 
-  RowBox[{"layersInSample", "=", "5"}], ";", 
+     "be", " ", "function", " ", "of", " ", "theta"}]}], 
+   "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"layersInSample", "=", "5"}], ";"}], 
   RowBox[{"(*", 
    RowBox[{
    "total", " ", "number", " ", "of", " ", "crystal", " ", "layers", " ", 
     RowBox[{"(", 
      RowBox[{
       RowBox[{"i", ".", "e", ".", "materials"}], " ", "in", " ", 
-      "heterostructure"}], ")"}]}], "*)"}], "\[IndentingNewLine]", 
-  RowBox[{"wavelength", " ", "=", " ", "0.709"}], ";", " ", 
+      "heterostructure"}], ")"}]}], "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"wavelength", " ", "=", " ", "0.709"}], ";"}], " ", 
   RowBox[{"(*", 
    RowBox[{"x", "-", 
     RowBox[{
     "ray", " ", "wavelength", " ", "from", " ", "molybdenum", " ", "K"}], "-",
-     "alpha1"}], "*)"}], "\[IndentingNewLine]", 
+     "alpha1"}], "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
   RowBox[{"scaling", " ", "=", 
    RowBox[{"(*", " ", "None", "*)"}], " ", "\"\<Log\>\""}], 
   ";"}], "\[IndentingNewLine]", 
@@ -61,7 +67,7 @@ Cell[BoxData[{
   RowBox[{
    RowBox[{"imageDimensions", " ", "=", " ", 
     RowBox[{"{", 
-     RowBox[{"1000", ",", "1000"}], "}"}]}], ";"}], "\[IndentingNewLine]", 
+     RowBox[{"1000", ",", "800"}], "}"}]}], ";"}], "\[IndentingNewLine]", 
   "\[IndentingNewLine]", 
   RowBox[{"(*", 
    RowBox[{"d", "-", 
@@ -387,11 +393,11 @@ Cell[BoxData[{
             "qZ", ",", "layerNum", ",", "rho", ",", "dSpace", ",", 
              "formFactor", ",", "mL", ",", "nBar", ",", "deltaL"}], "]"}], 
            "]"}], "]"}], "]"}], ";"}], "*)"}], "\[IndentingNewLine]", "r"}]}],
-     "\[IndentingNewLine]", "]"}]}], "\n", "\[IndentingNewLine]", 
-  "\[IndentingNewLine]", "\[IndentingNewLine]", 
+     "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
   RowBox[{"(*", 
    RowBox[{"the", " ", "average", " ", "scattering", " ", "amplitude"}], 
-   "*)"}]}], "\[IndentingNewLine]", 
+   "*)"}]}], "\n", 
  RowBox[{
   RowBox[{
    RowBox[{"scatAmp", "[", 
@@ -506,7 +512,7 @@ Cell[BoxData[{
        RowBox[{
         RowBox[{"Echo", "[", "sum", "]"}], ";"}], "*)"}], 
       "\[IndentingNewLine]", "\[IndentingNewLine]", "sum"}]}], 
-    "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "\n", 
+    "\[IndentingNewLine]", "]"}]}], "\n", "\[IndentingNewLine]", 
   "\[IndentingNewLine]", "\[IndentingNewLine]", 
   RowBox[{"(*", 
    RowBox[{
@@ -739,7 +745,7 @@ final-q.txt\>\"", ",", " ", "\"\<Table\>\""}], "]"}]}], " ", ";",
       RowBox[{"ImageSize", "\[Rule]", "imageDimensions"}], ",", " ", 
       RowBox[{"PlotLegends", "\[Rule]", 
        RowBox[{"{", "\"\<b987 (001) Q\>\"", "}"}]}]}], "]"}]}], ";"}], 
-  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\n", 
   RowBox[{"(*", 
    RowBox[{
    "**", "**", "**", "**", "**", "**", "**", "**", "**", "**", "**", "**", "**",
@@ -783,7 +789,8 @@ final-q.txt\>\"", ",", " ", "\"\<Table\>\""}], "]"}]}], " ", ";",
    RowBox[{
     RowBox[{
      RowBox[{"let", "'"}], "s", " ", "see", " ", "how", " ", "fast", " ", 
-     "it", " ", "is"}], "..."}], "*)"}], "\n"}], "\[IndentingNewLine]", 
+     "it", " ", "is"}], "..."}], "*)"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
  RowBox[{"Manipulate", "[", 
   RowBox[{
    RowBox[{
@@ -816,45 +823,162 @@ final-q.txt\>\"", ",", " ", "\"\<Table\>\""}], "]"}]}], " ", ";",
      RowBox[{"{", 
       RowBox[{"q", ",", "qInit", ",", "qFin"}], "}"}]}], ";", 
     "\[IndentingNewLine]", "\[IndentingNewLine]", 
-    RowBox[{"plotFit", " ", "=", " ", 
-     RowBox[{"Plot", "[", 
+    RowBox[{"physicalParams", "=", 
+     RowBox[{"{", 
       RowBox[{
-       RowBox[{"rSpec", "[", 
+       RowBox[{"{", 
         RowBox[{
-        "q", ",", "polFactor", ",", "eRad", ",", "layerNum", ",", "rho", ",", 
-         "dSpace", ",", "formFactor", ",", "mL", ",", "nBar", ",", "deltaL"}],
-         "]"}], ",", "qRange", ",", 
-       RowBox[{"PlotPoints", "\[Rule]", "pointsPlotted"}], ",", 
-       RowBox[{"MaxRecursion", "\[Rule]", "plotPointRecursion"}], ",", 
-       "\[IndentingNewLine]", "\t\t", 
-       RowBox[{"ScalingFunctions", "\[Rule]", "scaling"}], ",", 
-       RowBox[{"Frame", "\[Rule]", "True"}], ",", 
-       RowBox[{"FrameLabel", "\[Rule]", 
-        RowBox[{"{", 
+        "\"\<Physical Parameters\>\"", ",", "\"\<STO\>\"", ",", "\"\<SRO\>\"",
+          ",", "\"\<BFO\>\"", ",", "\"\<Co\>\""}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{
+        "\"\<Thickness (\[Angstrom])\>\"", ",", "0", ",", "0", ",", "0", ",", 
+         "0"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{
+        "\"\<Roughness (\[Angstrom])\>\"", ",", "0", ",", "0", ",", "0", ",", 
+         "0"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{
+        "\"\<Delta Spacing (\[Angstrom])\>\"", ",", "0", ",", "0", ",", "0", 
+         ",", "0"}], "}"}]}], "}"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"For", "[", 
+     RowBox[{
+      RowBox[{"i", "=", "2"}], ",", 
+      RowBox[{"i", "\[LessEqual]", 
+       RowBox[{"Length", "[", 
+        RowBox[{"physicalParams", "[", 
+         RowBox[{"[", "1", "]"}], "]"}], "]"}]}], ",", 
+      RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"physicalParams", "[", 
+         RowBox[{"[", 
+          RowBox[{"2", ",", "i"}], "]"}], "]"}], "=", 
+        RowBox[{
+         RowBox[{"nBar", "[", 
+          RowBox[{"[", 
+           RowBox[{"i", "-", "1"}], "]"}], "]"}], "*", 
+         RowBox[{"dSpace", "[", 
+          RowBox[{"[", 
+           RowBox[{"i", "-", "1"}], "]"}], "]"}]}]}], ";"}]}], 
+     "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"For", "[", 
+     RowBox[{
+      RowBox[{"i", "=", "2"}], ",", 
+      RowBox[{"i", "\[LessEqual]", 
+       RowBox[{"Length", "[", 
+        RowBox[{"physicalParams", "[", 
+         RowBox[{"[", "1", "]"}], "]"}], "]"}]}], ",", 
+      RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"physicalParams", "[", 
+         RowBox[{"[", 
+          RowBox[{"3", ",", "i"}], "]"}], "]"}], "=", 
+        RowBox[{
+         RowBox[{"Sqrt", "[", 
+          RowBox[{
+           RowBox[{"nBar", "[", 
+            RowBox[{"[", 
+             RowBox[{"i", "-", "1"}], "]"}], "]"}], "*", 
+           RowBox[{"(", 
+            RowBox[{"1", "-", 
+             RowBox[{
+              RowBox[{"nBar", "[", 
+               RowBox[{"[", 
+                RowBox[{"i", "-", "1"}], "]"}], "]"}], "/", 
+              RowBox[{"mL", "[", 
+               RowBox[{"[", 
+                RowBox[{"i", "-", "1"}], "]"}], "]"}]}]}], ")"}]}], "]"}], 
+         "*", 
+         RowBox[{"dSpace", "[", 
+          RowBox[{"[", 
+           RowBox[{"i", "-", "1"}], "]"}], "]"}]}]}], ";"}]}], 
+     "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"For", "[", 
+     RowBox[{
+      RowBox[{"i", "=", "2"}], ",", 
+      RowBox[{"i", "\[LessEqual]", 
+       RowBox[{"Length", "[", 
+        RowBox[{"physicalParams", "[", 
+         RowBox[{"[", "1", "]"}], "]"}], "]"}]}], ",", 
+      RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"physicalParams", "[", 
+         RowBox[{"[", 
+          RowBox[{"4", ",", "i"}], "]"}], "]"}], "=", 
+        RowBox[{"deltaL", "[", 
+         RowBox[{"[", 
+          RowBox[{"i", "-", "1"}], "]"}], "]"}]}], ";"}]}], 
+     "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"Column", "[", 
+     RowBox[{
+      RowBox[{"{", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"plotFit", " ", "=", " ", 
+          RowBox[{"Plot", "[", 
+           RowBox[{
+            RowBox[{"rSpec", "[", 
+             RowBox[{
+             "q", ",", "polFactor", ",", "eRad", ",", "layerNum", ",", "rho", 
+              ",", "dSpace", ",", "formFactor", ",", "mL", ",", "nBar", ",", 
+              "deltaL"}], "]"}], ",", "qRange", ",", 
+            RowBox[{"PlotPoints", "\[Rule]", "pointsPlotted"}], ",", 
+            RowBox[{"MaxRecursion", "\[Rule]", "plotPointRecursion"}], ",", 
+            "\[IndentingNewLine]", "\t\t", 
+            RowBox[{"ScalingFunctions", "\[Rule]", "scaling"}], ",", 
+            RowBox[{"Frame", "\[Rule]", "True"}], ",", 
+            RowBox[{"FrameLabel", "\[Rule]", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"Style", "[", 
+                RowBox[{
+                "\"\<Q (\!\(\*SuperscriptBox[\(\[Angstrom]\), \(-1\)]\))\>\"",
+                  ",", "16", ",", "Bold"}], "]"}], ",", 
+               RowBox[{"Style", "[", 
+                RowBox[{
+                "\"\<Reflectivity (counts/sec)\>\"", ",", "16", ",", "Bold"}],
+                 "]"}]}], "}"}]}], ",", 
+            RowBox[{"ImageSize", "\[Rule]", "imageDimensions"}], ",", " ", 
+            RowBox[{"PlotLegends", "\[Rule]", 
+             RowBox[{"{", "\"\<fit\>\"", "}"}]}]}], "]"}]}], ";", 
+         "\[IndentingNewLine]", 
+         RowBox[{"Show", "[", 
+          RowBox[{"plotFit", ",", " ", 
+           RowBox[{"(*", "plot986Bragg001Theta", "*)"}], 
+           "plot987Bragg001Theta"}], 
+          RowBox[{"(*", 
+           RowBox[{",", " ", "plot987Bragg001Q"}], "*)"}], "]"}]}], " ", 
+        RowBox[{"(*", 
          RowBox[{
-          RowBox[{"Style", "[", 
-           RowBox[{
-           "\"\<Q (\!\(\*SuperscriptBox[\(\[Angstrom]\), \(-1\)]\))\>\"", ",",
-             "16", ",", "Bold"}], "]"}], ",", 
-          RowBox[{"Style", "[", 
-           RowBox[{
-           "\"\<Reflectivity (counts/sec)\>\"", ",", "16", ",", "Bold"}], 
-           "]"}]}], "}"}]}], ",", 
-       RowBox[{"ImageSize", "\[Rule]", "imageDimensions"}], ",", " ", 
-       RowBox[{"PlotLegends", "\[Rule]", 
-        RowBox[{"{", "\"\<fit\>\"", "}"}]}]}], "]"}]}], ";", 
-    "\[IndentingNewLine]", "\[IndentingNewLine]", 
-    RowBox[{"Show", "[", 
-     RowBox[{"plotFit", ",", " ", 
-      RowBox[{"(*", "plot986Bragg001Theta", "*)"}], "plot987Bragg001Theta"}], 
-     RowBox[{"(*", 
-      RowBox[{",", " ", "plot987Bragg001Q"}], "*)"}], "]"}]}], " ", 
-   RowBox[{"(*", 
-    RowBox[{
-    "put", " ", "Manipulate", " ", "plot", " ", "first", " ", "so", " ", 
-     "that", " ", "Q", " ", "range", " ", "can", " ", "be", " ", 
-     "manipulated"}], "*)"}], ",", "\[IndentingNewLine]", 
-   "\[IndentingNewLine]", 
+         "put", " ", "Manipulate", " ", "plot", " ", "first", " ", "so", " ", 
+          "that", " ", "Q", " ", "range", " ", "can", " ", "be", " ", 
+          "manipulated"}], "*)"}], "\[IndentingNewLine]", ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"Grid", "[", 
+         RowBox[{"physicalParams", ",", 
+          RowBox[{"Alignment", "\[Rule]", "Center"}], ",", 
+          RowBox[{"Frame", "\[Rule]", "All"}], ",", 
+          RowBox[{"Background", "\[Rule]", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"Lighter", "[", 
+                RowBox[{"Gray", ",", "0.3"}], "]"}], ",", "None"}], "}"}], 
+             ",", 
+             RowBox[{"{", 
+              RowBox[{"LightGray", ",", "None"}], "}"}]}], "}"}]}], ",", 
+          RowBox[{"ItemStyle", "\[Rule]", 
+           RowBox[{"Directive", "[", 
+            RowBox[{"FontSize", " ", "->", " ", "16"}], "]"}]}]}], "]"}]}], 
+       "\[IndentingNewLine]", "}"}], ",", 
+      RowBox[{"Alignment", "\[Rule]", "Center"}], ",", 
+      RowBox[{"Spacings", "\[Rule]", "0"}]}], "]"}]}], "\[IndentingNewLine]", 
+   ",", "\[IndentingNewLine]", "\[IndentingNewLine]", 
    RowBox[{"(*", 
     RowBox[{"Manipulation", " ", "parameters"}], "*)"}], 
    "\[IndentingNewLine]", 
@@ -1157,23 +1281,42 @@ final-q.txt\>\"", ",", " ", "\"\<Table\>\""}], "]"}]}], " ", ";",
    3.737730156653816*^9, 3.737730240295816*^9}, {3.737733541207816*^9, 
    3.737733556722816*^9}, {3.7377335992988157`*^9, 3.7377336428638163`*^9}, {
    3.737733820012816*^9, 3.7377338208128157`*^9}, {3.737734808624816*^9, 
-   3.737734912814816*^9}, {3.737736930920816*^9, 
-   3.737737020410816*^9}},ExpressionUUID->"2f69b8ce-0cd8-44a6-b9a9-\
+   3.737734912814816*^9}, {3.737736930920816*^9, 3.737737020410816*^9}, {
+   3.737824971162588*^9, 3.737824972622617*^9}, {3.7378253630305405`*^9, 
+   3.73782536508154*^9}, {3.7378254150915403`*^9, 3.7378254178465405`*^9}, {
+   3.73782553450154*^9, 3.7378255883225403`*^9}, {3.7378256393165402`*^9, 
+   3.73782569974854*^9}, {3.73782574811954*^9, 3.73782587934954*^9}, {
+   3.73782594233054*^9, 3.73782609407454*^9}, {3.7378261273535404`*^9, 
+   3.73782617997954*^9}, {3.73782640475754*^9, 3.7378264124315405`*^9}, 
+   3.73782659185654*^9, {3.73782679784554*^9, 3.73782682253554*^9}, 
+   3.73782685701754*^9, {3.7378269682945404`*^9, 3.73782698141054*^9}, {
+   3.7378278233615403`*^9, 3.73782782404154*^9}, {3.7378278551675406`*^9, 
+   3.73782787149554*^9}, {3.73782813172254*^9, 3.7378281846515403`*^9}, {
+   3.7378283221125402`*^9, 3.73782832318754*^9}, {3.7378283548755403`*^9, 
+   3.7378283576815405`*^9}, {3.7378285171505404`*^9, 
+   3.7378285248165402`*^9}, {3.73782872999854*^9, 3.7378287511255403`*^9}, {
+   3.73782884056054*^9, 3.7378288460705404`*^9}, {3.7378288909905405`*^9, 
+   3.73782892450754*^9}, {3.7378290106505404`*^9, 3.73782904214554*^9}, {
+   3.73782919535454*^9, 3.7378291959245405`*^9}, {3.73782926726754*^9, 
+   3.73782929304554*^9}, {3.7378294517025404`*^9, 3.73782947799454*^9}, {
+   3.7378295185235405`*^9, 3.73782957622654*^9}, {3.73782982543554*^9, 
+   3.7378298582165403`*^9}, {3.73782992125154*^9, 3.7378299490395403`*^9}, {
+   3.7378300000795403`*^9, 
+   3.7378300244525404`*^9}},ExpressionUUID->"2f69b8ce-0cd8-44a6-b9a9-\
 14b936cbef4e"],
 
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`delBiFeO3$$ = 4.1, $CellContext`delCo$$ = 
-    1., $CellContext`delSrRuO3$$ = 
-    2.3000000000000003`, $CellContext`delSrTiO3$$ = 
-    0.2, $CellContext`layerNum$$ = 4, $CellContext`mBiFeO3$$ = 
+   DynamicModuleBox[{$CellContext`delBiFeO3$$ = 4.09, $CellContext`delCo$$ = 
+    1., $CellContext`delSrRuO3$$ = 2.292, $CellContext`delSrTiO3$$ = 
+    0.2264, $CellContext`layerNum$$ = 1, $CellContext`mBiFeO3$$ = 
     157, $CellContext`mCo$$ = 24, $CellContext`mPt$$ = 
     69, $CellContext`mSrRuO3$$ = 56, $CellContext`mSrTiO3$$ = 
-    500, $CellContext`nBiFeO3$$ = 142.6, $CellContext`nCo$$ = 
+    500, $CellContext`nBiFeO3$$ = 142.645, $CellContext`nCo$$ = 
     23.97, $CellContext`nPt$$ = 68.04, $CellContext`nSrRuO3$$ = 
-    54., $CellContext`nSrTiO3$$ = 500, $CellContext`pointsPlotted$$ = 
-    1000, $CellContext`polFactor$$ = 4230, $CellContext`qFin$$ = 
+    54.014, $CellContext`nSrTiO3$$ = 500, $CellContext`pointsPlotted$$ = 
+    200, $CellContext`polFactor$$ = 4230, $CellContext`qFin$$ = 
     1.8, $CellContext`qInit$$ = 1.4, Typeset`show$$ = True, 
     Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
@@ -1220,17 +1363,17 @@ Cell[BoxData[
        Hold[$CellContext`mPt$$], 69, "M"}, 1, 600, 1}, {{
        Hold[$CellContext`nPt$$], 68.04, 
        "\!\(\*OverscriptBox[\(N\), \(_\)]\)"}, 1, 600, 0.1}}, 
-    Typeset`size$$ = {1004., {447., 453.}}, Typeset`update$$ = 0, 
+    Typeset`size$$ = {1004., {395., 402.}}, Typeset`update$$ = 0, 
     Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    True, $CellContext`layerNum$14350040173$$ = 
-    0, $CellContext`pointsPlotted$14350040174$$ = 
-    0, $CellContext`qInit$14350040175$$ = 0, $CellContext`qFin$14350040176$$ =
-     0, $CellContext`polFactor$14350040177$$ = 
-    0, $CellContext`mSrTiO3$14350040178$$ = 
-    0, $CellContext`nSrTiO3$14350040179$$ = 
-    0, $CellContext`delSrTiO3$14350040180$$ = 
-    0, $CellContext`mSrRuO3$14350040181$$ = 
-    0, $CellContext`nSrRuO3$14350040182$$ = 0}, 
+    True, $CellContext`layerNum$14353463609$$ = 
+    0, $CellContext`pointsPlotted$14353463610$$ = 
+    0, $CellContext`qInit$14353463611$$ = 0, $CellContext`qFin$14353463612$$ =
+     0, $CellContext`polFactor$14353463613$$ = 
+    0, $CellContext`mSrTiO3$14353463614$$ = 
+    0, $CellContext`nSrTiO3$14353463615$$ = 
+    0, $CellContext`delSrTiO3$14353463616$$ = 
+    0, $CellContext`mSrRuO3$14353463617$$ = 
+    0, $CellContext`nSrRuO3$14353463618$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`delBiFeO3$$ = 4.09, $CellContext`delCo$$ = 
@@ -1243,19 +1386,19 @@ Cell[BoxData[
         54.014, $CellContext`nSrTiO3$$ = 500, $CellContext`pointsPlotted$$ = 
         200, $CellContext`polFactor$$ = 4230, $CellContext`qFin$$ = 
         1.8, $CellContext`qInit$$ = 1.4}, "ControllerVariables" :> {
-        Hold[$CellContext`layerNum$$, $CellContext`layerNum$14350040173$$, 0], 
+        Hold[$CellContext`layerNum$$, $CellContext`layerNum$14353463609$$, 0], 
         Hold[$CellContext`pointsPlotted$$, \
-$CellContext`pointsPlotted$14350040174$$, 0], 
-        Hold[$CellContext`qInit$$, $CellContext`qInit$14350040175$$, 0], 
-        Hold[$CellContext`qFin$$, $CellContext`qFin$14350040176$$, 0], 
-        Hold[$CellContext`polFactor$$, $CellContext`polFactor$14350040177$$, 
+$CellContext`pointsPlotted$14353463610$$, 0], 
+        Hold[$CellContext`qInit$$, $CellContext`qInit$14353463611$$, 0], 
+        Hold[$CellContext`qFin$$, $CellContext`qFin$14353463612$$, 0], 
+        Hold[$CellContext`polFactor$$, $CellContext`polFactor$14353463613$$, 
          0], 
-        Hold[$CellContext`mSrTiO3$$, $CellContext`mSrTiO3$14350040178$$, 0], 
-        Hold[$CellContext`nSrTiO3$$, $CellContext`nSrTiO3$14350040179$$, 0], 
-        Hold[$CellContext`delSrTiO3$$, $CellContext`delSrTiO3$14350040180$$, 
+        Hold[$CellContext`mSrTiO3$$, $CellContext`mSrTiO3$14353463614$$, 0], 
+        Hold[$CellContext`nSrTiO3$$, $CellContext`nSrTiO3$14353463615$$, 0], 
+        Hold[$CellContext`delSrTiO3$$, $CellContext`delSrTiO3$14353463616$$, 
          0], 
-        Hold[$CellContext`mSrRuO3$$, $CellContext`mSrRuO3$14350040181$$, 0], 
-        Hold[$CellContext`nSrRuO3$$, $CellContext`nSrRuO3$14350040182$$, 0]}, 
+        Hold[$CellContext`mSrRuO3$$, $CellContext`mSrRuO3$14353463617$$, 0], 
+        Hold[$CellContext`nSrRuO3$$, $CellContext`nSrRuO3$14353463618$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -1268,19 +1411,50 @@ $CellContext`nSrRuO3$$, $CellContext`nBiFeO3$$, $CellContext`nCo$$, \
 $CellContext`nPt$$}; $CellContext`deltaL = {$CellContext`delSrTiO3$$, \
 $CellContext`delSrRuO3$$, $CellContext`delBiFeO3$$, $CellContext`delCo$$}; \
 $CellContext`qRange = {$CellContext`q, $CellContext`qInit$$, \
-$CellContext`qFin$$}; $CellContext`plotFit = Plot[
-          $CellContext`rSpec[$CellContext`q, $CellContext`polFactor$$, \
+$CellContext`qFin$$}; $CellContext`physicalParams = {{
+          "Physical Parameters", "STO", "SRO", "BFO", "Co"}, {
+          "Thickness (\[Angstrom])", 0, 0, 0, 0}, {
+          "Roughness (\[Angstrom])", 0, 0, 0, 0}, {
+          "Delta Spacing (\[Angstrom])", 0, 0, 0, 0}}; 
+       For[$CellContext`i = 2, $CellContext`i <= Length[
+           Part[$CellContext`physicalParams, 1]], 
+         Increment[$CellContext`i], 
+         Part[$CellContext`physicalParams, 2, $CellContext`i] = 
+          Part[$CellContext`nBar, $CellContext`i - 1] 
+           Part[$CellContext`dSpace, $CellContext`i - 1]; Null]; 
+       For[$CellContext`i = 2, $CellContext`i <= Length[
+           Part[$CellContext`physicalParams, 1]], 
+         Increment[$CellContext`i], 
+         Part[$CellContext`physicalParams, 3, $CellContext`i] = 
+          Sqrt[Part[$CellContext`nBar, $CellContext`i - 1] (1 - 
+              Part[$CellContext`nBar, $CellContext`i - 1]/
+              Part[$CellContext`mL, $CellContext`i - 1])] 
+           Part[$CellContext`dSpace, $CellContext`i - 1]; Null]; 
+       For[$CellContext`i = 2, $CellContext`i <= Length[
+           Part[$CellContext`physicalParams, 1]], 
+         Increment[$CellContext`i], 
+         Part[$CellContext`physicalParams, 4, $CellContext`i] = 
+          Part[$CellContext`deltaL, $CellContext`i - 1]; Null]; 
+       Column[{$CellContext`plotFit = Plot[
+             $CellContext`rSpec[$CellContext`q, $CellContext`polFactor$$, \
 $CellContext`eRad, $CellContext`layerNum$$, $CellContext`rho, \
 $CellContext`dSpace, $CellContext`formFactor, $CellContext`mL, \
 $CellContext`nBar, $CellContext`deltaL], $CellContext`qRange, 
-          PlotPoints -> $CellContext`pointsPlotted$$, 
-          MaxRecursion -> $CellContext`plotPointRecursion, 
-          ScalingFunctions -> $CellContext`scaling, Frame -> True, FrameLabel -> {
-            Style[
-            "Q (\!\(\*SuperscriptBox[\(\[Angstrom]\), \(-1\)]\))", 16, Bold], 
-            Style["Reflectivity (counts/sec)", 16, Bold]}, 
-          ImageSize -> $CellContext`imageDimensions, PlotLegends -> {"fit"}]; 
-       Show[$CellContext`plotFit, $CellContext`plot987Bragg001Theta]), 
+             PlotPoints -> $CellContext`pointsPlotted$$, 
+             MaxRecursion -> $CellContext`plotPointRecursion, 
+             ScalingFunctions -> $CellContext`scaling, Frame -> True, 
+             FrameLabel -> {
+               Style[
+               "Q (\!\(\*SuperscriptBox[\(\[Angstrom]\), \(-1\)]\))", 16, 
+                Bold], 
+               Style["Reflectivity (counts/sec)", 16, Bold]}, 
+             ImageSize -> $CellContext`imageDimensions, 
+             PlotLegends -> {"fit"}]; 
+          Show[$CellContext`plotFit, $CellContext`plot987Bragg001Theta], 
+          Grid[$CellContext`physicalParams, Alignment -> Center, Frame -> All,
+            Background -> {{
+              Lighter[Gray, 0.3], None}, {LightGray, None}}, ItemStyle -> 
+           Directive[FontSize -> 16]]}, Alignment -> Center, Spacings -> 0]), 
       "Specifications" :> {{{$CellContext`layerNum$$, 1, 
           "Layers Considered"}, {1, 2, 3, 4, 5}}, 
         Delimiter, {{$CellContext`pointsPlotted$$, 200, "Points Plotted"}, 1, 
@@ -1324,7 +1498,7 @@ $CellContext`nBar, $CellContext`deltaL], $CellContext`qRange,
          1}, {{$CellContext`nPt$$, 68.04, 
           "\!\(\*OverscriptBox[\(N\), \(_\)]\)"}, 1, 600, 0.1}}, 
       "Options" :> {}, "DefaultOptions" :> {}],
-     ImageSizeCache->{1330., {475., 482.}},
+     ImageSizeCache->{1330., {463., 470.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -1335,360 +1509,16 @@ $CellContext`nBar, $CellContext`deltaL], $CellContext`qRange,
    Deployed->True,
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Output",
- CellChangeTimes->{3.737733645608816*^9, 3.737733823067816*^9, 
-  3.737734830491816*^9, 3.737734921532816*^9, 
-  3.737737034432816*^9},ExpressionUUID->"ecdf7018-6af8-4c2c-92d7-\
-20cc72334246"]
-}, Open  ]],
-
-Cell[RawData["\<\
-late\"]], \"Message\", \"MSG\",
-
  CellChangeTimes->{
-
-  3.7100054758316803`*^9},ExpressionUUID->\"e4368e98-52ad-4b31-b3b3-\\
-
-9133a9c39c8f\"],
-
-
-
-Cell[BoxData[
-
- TemplateBox[{
-
-  \"Part\",\"partw\",
-
-   \"\\\"Part \\\\!\\\\(\\\\*RowBox[{\\\\\\\"5\\\\\\\"}]\\\\) of \\\\!\\\\(\\\
-\\*RowBox[{\\\\\\\"{\\\\\\\", \\
-
-RowBox[{\\\\\\\"0.08396`\\\\\\\", \\\\\\\",\\\\\\\", \
-\\\\\\\"0.082706`\\\\\\\", \\\\\\\",\\\\\\\", \\
-
-\\\\\\\"0.088864`\\\\\\\", \\\\\\\",\\\\\\\", \\\\\\\"0.066214`\\\\\\\"}], \\\
-\\\\\"}\\\\\\\"}]\\\\) does not \\
-
-exist.\\\"\",2,2416,66,32019327414285807291,\"Local\"},
-
-  \"MessageTemplate\"]], \"Message\", \"MSG\",
-
- CellChangeTimes->{
-
-  3.7100054758526807`*^9},ExpressionUUID->\"f766cd56-2617-4fe1-8df7-\\
-
-a180af0fa449\"],
-
-
-
-Cell[BoxData[
-
- TemplateBox[{
-
-  \"Part\",\"partw\",
-
-   \"\\\"Part \\\\!\\\\(\\\\*RowBox[{\\\\\\\"5\\\\\\\"}]\\\\) of \\\\!\\\\(\\\
-\\*RowBox[{\\\\\\\"{\\\\\\\", \\
-
-RowBox[{\\\\\\\"3.905`\\\\\\\", \\\\\\\",\\\\\\\", \\\\\\\"7.845`\\\\\\\", \\\
-\\\\\",\\\\\\\", \\\\\\\"4.062`\\\\\\\", \\
-
-\\\\\\\",\\\\\\\", \\\\\\\"3.924`\\\\\\\"}], \\\\\\\"}\\\\\\\"}]\\\\) does \
-not exist.\\\"\",2,2416,67,
-
-   32019327414285807291,\"Local\"},
-
-  \"MessageTemplate\"]], \"Message\", \"MSG\",
-
- CellChangeTimes->{
-
-  3.710005475870681*^9},ExpressionUUID->\"e31cf48e-1958-4591-bcb1-\\
-
-2cbb02859556\"],
-
-
-
-Cell[BoxData[
-
- TemplateBox[{
-
-  \"General\",\"stop\",
-
-   \"\\\"Further output of \\\\!\\\\(\\\\*StyleBox[RowBox[{\\\\\\\"Part\\\\\\\
-\", \\\\\\\"::\\\\\\\", \\
-
-\\\\\\\"partw\\\\\\\"}], \\\\\\\"MessageName\\\\\\\"]\\\\) will be suppressed \
-during this \\
-
-calculation.\\\"\",2,2416,68,32019327414285807291,\"Local\"},
-
-  \"MessageTemplate\"]], \"Message\", \"MSG\",
-
- CellChangeTimes->{
-
-  3.7100054758876805`*^9},ExpressionUUID->\"752fd032-ed11-431c-91fc-\\
-
-50c181fa891e\"],
-
-
-
-Cell[BoxData[
-
- TemplateBox[{
-
-  \"Part\",\"partw\",
-
-   \"\\\"Part \\\\!\\\\(\\\\*RowBox[{\\\\\\\"5\\\\\\\"}]\\\\) of \\\\!\\\\(\\\
-\\*RowBox[{\\\\\\\"{\\\\\\\", \\
-
-RowBox[{\\\\\\\"3.905`\\\\\\\", \\\\\\\",\\\\\\\", \\\\\\\"7.845`\\\\\\\", \\\
-\\\\\",\\\\\\\", \\\\\\\"4.062`\\\\\\\", \\
-
-\\\\\\\",\\\\\\\", \\\\\\\"3.924`\\\\\\\"}], \\\\\\\"}\\\\\\\"}]\\\\) does \
-not exist.\\\"\",2,2416,69,
-
-   32019327414285807291,\"Local\"},
-
-  \"MessageTemplate\"]], \"Message\", \"MSG\",
-
- CellChangeTimes->{
-
-  3.7100054771386805`*^9},ExpressionUUID->\"54d2742f-22ba-4e0d-ae67-\\
-
-a642ae4f582b\"],
-
-
-
-Cell[BoxData[
-
- TemplateBox[{
-
-  \"Part\",\"partw\",
-
-   \"\\\"Part \\\\!\\\\(\\\\*RowBox[{\\\\\\\"5\\\\\\\"}]\\\\) of \\\\!\\\\(\\\
-\\*RowBox[{\\\\\\\"{\\\\\\\", \\
-
-RowBox[{\\\\\\\"0.08396`\\\\\\\", \\\\\\\",\\\\\\\", \
-\\\\\\\"0.082706`\\\\\\\", \\\\\\\",\\\\\\\", \\
-
-\\\\\\\"0.088864`\\\\\\\", \\\\\\\",\\\\\\\", \\\\\\\"0.066214`\\\\\\\"}], \\\
-\\\\\"}\\\\\\\"}]\\\\) does not \\
-
-exist.\\\"\",2,2416,70,32019327414285807291,\"Local\"},
-
-  \"MessageTemplate\"]], \"Message\", \"MSG\",
-
- CellChangeTimes->{
-
-  3.7100054771566806`*^9},ExpressionUUID->\"b9bf7689-12ce-4a2d-b5c1-\\
-
-df0308dd723d\"],
-
-
-
-Cell[BoxData[
-
- TemplateBox[{
-
-  \"Part\",\"partw\",
-
-   \"\\\"Part \\\\!\\\\(\\\\*RowBox[{\\\\\\\"5\\\\\\\"}]\\\\) of \\\\!\\\\(\\\
-\\*RowBox[{\\\\\\\"{\\\\\\\", \\
-
-RowBox[{\\\\\\\"3.905`\\\\\\\", \\\\\\\",\\\\\\\", \\\\\\\"7.845`\\\\\\\", \\\
-\\\\\",\\\\\\\", \\\\\\\"4.062`\\\\\\\", \\
-
-\\\\\\\",\\\\\\\", \\\\\\\"3.924`\\\\\\\"}], \\\\\\\"}\\\\\\\"}]\\\\) does \
-not exist.\\\"\"\
-\>"], "Input"],
-
-Cell[RawData["\<\
-16,71,
-
-   32019327414285807291,\"Local\"},
-
-  \"MessageTemplate\"]], \"Message\", \"MSG\",
-
- CellChangeTimes->{
-
-  3.7100054771756806`*^9},ExpressionUUID->\"89a135f8-69ef-4ac3-8e89-\\
-
-4bc6b8e873fc\"],
-
-
-
-Cell[BoxData[
-
- TemplateBox[{
-
-  \"General\",\"stop\",
-
-   \"\\\"Further output of \\\\!\\\\(\\\\*StyleBox[RowBox[{\\\\\\\"Part\\\\\\\
-\", \\\\\\\"::\\\\\\\", \\
-
-\\\\\\\"partw\\\\\\\"}], \\\\\\\"MessageName\\\\\\\"]\\\\) will be suppressed \
-during this \\
-
-calculation.\\\"\",2,2416,72,32019327414285807291,\"Local\"},
-
-  \"MessageTemplate\"]], \"Message\", \"MSG\",
-
- CellChangeTimes->{
-
-  3.7100054771956806`*^9},ExpressionUUID->\"e8657a61-80f6-407c-a531-\\
-
-d8f8b6dcc2b6\"],
-
-
-
-Cell[BoxData[
-
- TemplateBox[{
-
-  \"Part\",\"partw\",
-
-   \"\\\"Part \\\\!\\\\(\\\\*RowBox[{\\\\\\\"5\\\\\\\"}]\\\\) of \\\\!\\\\(\\\
-\\*RowBox[{\\\\\\\"{\\\\\\\", \\
-
-RowBox[{\\\\\\\"3.905`\\\\\\\", \\\\\\\",\\\\\\\", \\\\\\\"7.845`\\\\\\\", \\\
-\\\\\",\\\\\\\", \\\\\\\"4.062`\\\\\\\", \\
-
-\\\\\\\",\\\\\\\", \\\\\\\"3.924`\\\\\\\"}], \\\\\\\"}\\\\\\\"}]\\\\) does \
-not exist.\\\"\",2,2416,73,
-
-   32019327414285807291,\"Local\"},
-
-  \"MessageTemplate\"]], \"Message\", \"MSG\",
-
- CellChangeTimes->{
-
-  3.7100054783286805`*^9},ExpressionUUID->\"ad31cf1e-3b15-4971-b614-\\
-
-379e88d380a8\"],
-
-
-
-Cell[BoxData[
-
- TemplateBox[{
-
-  \"Part\",\"partw\",
-
-   \"\\\"Part \\\\!\\\\(\\\\*RowBox[{\\\\\\\"5\\\\\\\"}]\\\\) of \\\\!\\\\(\\\
-\\*RowBox[{\\\\\\\"{\\\\\\\", \\
-
-RowBox[{\\\\\\\"0.08396`\\\\\\\", \\\\\\\",\\\\\\\", \
-\\\\\\\"0.082706`\\\\\\\", \\\\\\\",\\\\\\\", \\
-
-\\\\\\\"0.088864`\\\\\\\", \\\\\\\",\\\\\\\", \\\\\\\"0.066214`\\\\\\\"}], \\\
-\\\\\"}\\\\\\\"}]\\\\) does not \\
-
-exist.\\\"\",2,2416,74,32019327414285807291,\"Local\"},
-
-  \"MessageTemplate\"]], \"Message\", \"MSG\",
-
- CellChangeTimes->{
-
-  3.7100054783466806`*^9},ExpressionUUID->\"646aec96-6f09-4eab-8a70-\\
-
-19bd6e61d82d\"],
-
-
-
-Cell[BoxData[
-
- TemplateBox[{
-
-  \"Part\",\"partw\",
-
-   \"\\\"Part \\\\!\\\\(\\\\*RowBox[{\\\\\\\"5\\\\\\\"}]\\\\) of \\\\!\\\\(\\\
-\\*RowBox[{\\\\\\\"{\\\\\\\", \\
-
-RowBox[{\\\\\\\"3.905`\\\\\\\", \\\\\\\",\\\\\\\", \\\\\\\"7.845`\\\\\\\", \\\
-\\\\\",\\\\\\\", \\\\\\\"4.062`\\\\\\\", \\
-
-\\\\\\\",\\\\\\\", \\\\\\\"3.924`\\\\\\\"}], \\\\\\\"}\\\\\\\"}]\\\\) does \
-not exist.\\\"\",2,2416,75,
-
-   32019327414285807291,\"Local\"},
-
-  \"MessageTemplate\"]], \"Message\", \"MSG\",
-
- CellChangeTimes->{
-
-  3.7100054783666806`*^9},ExpressionUUID->\"3cc6b67e-9fc2-4793-ae06-\\
-
-dec0fe674247\"],
-
-
-
-Cell[BoxData[
-
- TemplateBox[{
-
-  \"General\",\"stop\",
-
-   \"\\\"Further output of \\\\!\\\\(\\\\*StyleBox[RowBox[{\\\\\\\"Part\\\\\\\
-\", \\\\\\\"::\\\\\\\", \\
-
-\\\\\\\"partw\\\\\\\"}], \\\\\\\"MessageName\\\\\\\"]\\\\) will be suppressed \
-during this \\
-
-calculation.\\\"\",2,2416,76,32019327414285807291,\"Local\"},
-
-  \"MessageTemplate\"]], \"Message\", \"MSG\",
-
- CellChangeTimes->{
-
-  3.7100054783846807`*^9},ExpressionUUID->\"0947f54b-1dbf-4e37-b701-\\
-
-990568e02648\"],
-
-
-
-Cell[BoxData[
-
- TemplateBox[{
-
-  \"Part\",\"partw\",
-
-   \"\\\"Part \\\\!\\\\(\\\\*RowBox[{\\\\\\\"5\\\\\\\"}]\\\\) of \\\\!\\\\(\\\
-\\*RowBox[{\\\\\\\"{\\\\\\\", \\
-
-RowBox[{\\\\\\\"3.905`\\\\\\\", \\\\\\\",\\\\\\\", \\\\\\\"7.845`\\\\\\\", \\\
-\\\\\",\\\\\\\", \\\\\\\"4.062`\\\\\\\", \\
-
-\\\\\\\",\\\\\\\", \\\\\\\"3.924`\\\\\\\"}], \\\\\\\"\
-\>"], "Input"],
-
-Cell[RawData["\<\
-}]\\\\) does not exist.\\\"\",2,2416,77,
-
-   32019327414285807291,\"Local\"},
-
-  \"MessageTemplate\"]], \"Message\", \"MSG\",
-
- CellChangeTimes->{
-
-  3.7100054795646806`*^9},ExpressionUUID->\"0e020fcc\
-\>"], "Input"],
-
-Cell[RawData["\<\
--488f-b698-\\
-
-d8eb2e434a90\"],
-
-
-
-Cell[BoxData[
-
- TemplateBox[{
-
-  \"Part\",\"partw\",
-
-   \"\\\"Part \\\\!\\\\(\\\\*RowBox[{\\\\\\\"5\\\\\\\"}]\\\\) of \\\\!\\\\(\\\
-\\*RowBox[{\\\\\\\"{\\\\\\\", \\
-
-RowBox[{\\\\\\\"0.08396`\\\\\\\", \
-\>"], "Input"]
+  3.73782841370854*^9, 3.73782852752154*^9, 3.7378287636225405`*^9, {
+   3.7378289071415405`*^9, 3.73782892613754*^9}, {3.7378290264085402`*^9, 
+   3.7378290492215405`*^9}, 3.73782919860954*^9, {3.7378292702425404`*^9, 
+   3.73782929563054*^9}, {3.7378294709085402`*^9, 3.7378294796745405`*^9}, 
+   3.7378295617045403`*^9, 3.73782980513254*^9, 3.7378298626845403`*^9, {
+   3.7378299350395403`*^9, 3.73782995050154*^9}, {3.7378300048605404`*^9, 
+   3.73783002665254*^9}},ExpressionUUID->"b18d56ae-bfb5-4ad9-b866-\
+53aa4982779e"]
+}, Open  ]]
 },
 WindowSize->{1920, 1038},
 WindowMargins->{{-8, Automatic}, {Automatic, -8}},
@@ -1712,19 +1542,11 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 49056, 1139, 3449, "Input", "ExpressionUUID" -> \
+Cell[580, 22, 55107, 1283, 3705, "Input", "ExpressionUUID" -> \
 "2f69b8ce-0cd8-44a6-b9a9-14b936cbef4e"],
-Cell[49639, 1163, 9670, 177, 973, "Output", "ExpressionUUID" -> \
-"ecdf7018-6af8-4c2c-92d7-20cc72334246"]
-}, Open  ]],
-Cell[59324, 1343, 3445, 157, 1940, "Input", "ExpressionUUID" -> \
-"40e1f900-9724-474c-a026-93c6480af5fe"],
-Cell[62772, 1502, 3345, 157, 1968, "Input", "ExpressionUUID" -> \
-"5cd34096-f07c-4636-904b-ffff73024258"],
-Cell[66120, 1661, 234, 10, 96, "Input", "ExpressionUUID" -> \
-"e6ca32dc-69b8-488d-8414-c49f67784893"],
-Cell[66357, 1673, 270, 17, 156, "Input", "ExpressionUUID" -> \
-"c74de171-88bf-4fb3-b65a-a90ef39dfa9a"]
+Cell[55690, 1307, 11683, 212, 949, "Output", "ExpressionUUID" -> \
+"b18d56ae-bfb5-4ad9-b866-53aa4982779e"]
+}, Open  ]]
 }
 ]
 *)

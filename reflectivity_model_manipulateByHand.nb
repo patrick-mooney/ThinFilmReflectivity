@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     70883,       1647]
-NotebookOptionsPosition[     69551,       1611]
-NotebookOutlinePosition[     70163,       1632]
-CellTagsIndexPosition[     70120,       1629]
+NotebookDataLength[     86287,       1948]
+NotebookOptionsPosition[     84724,       1907]
+NotebookOutlinePosition[     85310,       1927]
+CellTagsIndexPosition[     85267,       1924]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -47,15 +47,18 @@ Cell[BoxData[
    RowBox[{
    "determined", " ", "by", " ", "the", " ", "current", " ", "values", " ", 
     "of", " ", "the", " ", "layers", " ", "in", " ", 
-    RowBox[{"manipulate", "."}]}], " ", "*)"}], "\[IndentingNewLine]", 
+    RowBox[{"manipulate", ".", " ", "Note"}], " ", "that", " ", "the", " ", 
+    "manipulate", " ", "function", " ", "truncates", " ", "floating", " ", 
+    "precision", " ", "when", " ", "it", " ", 
+    RowBox[{"starts", "."}]}], " ", "*)"}], "\[IndentingNewLine]", 
   RowBox[{"(*", " ", 
    RowBox[{
    "Make", " ", "sure", " ", "the", " ", "paths", " ", "to", " ", "the", " ", 
     "data", " ", "are", " ", 
     RowBox[{"correct", "!"}]}], " ", "*)"}], "\[IndentingNewLine]"}]], "Input",
  CellChangeTimes->{{3.741698913377449*^9, 3.741699080695449*^9}, {
-  3.7417006634173813`*^9, 
-  3.741700677794669*^9}},ExpressionUUID->"826eb94b-1e00-4e42-9258-\
+  3.7417006634173813`*^9, 3.741700677794669*^9}, {3.741706343470784*^9, 
+  3.7417063450658164`*^9}},ExpressionUUID->"826eb94b-1e00-4e42-9258-\
 969cd4a289c6"],
 
 Cell[BoxData[
@@ -461,8 +464,8 @@ Cell[BoxData[
              "qZ", ",", "layerNum", ",", "rho", ",", "dSpace", ",", 
               "formFactor", ",", "mL", ",", "nBar", ",", "deltaL"}], "]"}], 
             "]"}], "]"}], "]"}], ";"}], "*)"}], "\[IndentingNewLine]", 
-       "r"}]}], "\[IndentingNewLine]", "]"}]}], "\n", "\[IndentingNewLine]", 
-   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+       "r"}]}], "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", "\n", 
    RowBox[{"(*", 
     RowBox[{"the", " ", "average", " ", "scattering", " ", "amplitude"}], 
     "*)"}], "\[IndentingNewLine]", 
@@ -580,13 +583,12 @@ Cell[BoxData[
         RowBox[{
          RowBox[{"Echo", "[", "sum", "]"}], ";"}], "*)"}], 
        "\[IndentingNewLine]", "\[IndentingNewLine]", "sum"}]}], 
-     "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "\n", 
-   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+     "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
    RowBox[{"(*", 
     RowBox[{
      RowBox[{"calculate", " ", "V"}], ",", 
-     RowBox[{"essentially", " ", "the", " ", "roughness"}]}], "*)"}], 
-   "\[IndentingNewLine]", 
+     RowBox[{"essentially", " ", "the", " ", "roughness"}]}], "*)"}], "\n", 
    RowBox[{
     RowBox[{"calcV", "[", 
      RowBox[{"qZ0_", ",", "i0_", ",", "d0_", ",", "m0_", ",", "n0_"}], "]"}], 
@@ -852,12 +854,13 @@ final-q.txt\>\"", ",", " ", "\"\<Table\>\""}], "]"}]}], " ", ";"}],
       "variables", " ", "we", " ", "wish", " ", "to", " ", "tweak", " ", 
       "during", " ", "the", " ", "simulation", " ", "and", " ", "with", " ", 
       "a", " ", "possible", " ", "range", " ", "of", " ", "manipulation"}]}], 
-    "*)"}], "\[IndentingNewLine]", 
+    "*)"}], "\n", 
    RowBox[{"(*", 
     RowBox[{
      RowBox[{
       RowBox[{"let", "'"}], "s", " ", "see", " ", "how", " ", "fast", " ", 
-      "it", " ", "is"}], "..."}], "*)"}], "\[IndentingNewLine]", "\n", 
+      "it", " ", "is"}], "..."}], "*)"}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
    RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
     RowBox[{
      RowBox[{
@@ -914,24 +917,24 @@ final-q.txt\>\"", ",", " ", "\"\<Table\>\""}], "]"}]}], " ", ";"}],
          RowBox[{"MaxRecursion", "\[Rule]", "plotPointRecursion"}], ",", 
          "\[IndentingNewLine]", "\t\t", 
          RowBox[{"ScalingFunctions", "\[Rule]", "scaling"}], ",", 
-         RowBox[{"Frame", "\[Rule]", "True"}], ",", 
-         RowBox[{"FrameLabel", "\[Rule]", 
-          RowBox[{"{", 
-           RowBox[{
-            RowBox[{"Style", "[", 
-             RowBox[{
-             "\"\<Q (\!\(\*SuperscriptBox[\(\[Angstrom]\), \(-1\)]\))\>\"", 
-              ",", "16", ",", "Bold"}], "]"}], ",", 
-            RowBox[{"Style", "[", 
-             RowBox[{
-             "\"\<Reflectivity (counts/sec)\>\"", ",", "16", ",", "Bold"}], 
-             "]"}]}], "}"}]}], ",", 
          RowBox[{"ImageSize", "\[Rule]", "imageDimensions"}], ",", " ", 
          RowBox[{"PlotLegends", "\[Rule]", 
           RowBox[{"{", "\"\<fit\>\"", "}"}]}]}], "]"}]}], ";", 
       "\[IndentingNewLine]", 
       RowBox[{"Show", "[", 
-       RowBox[{"plot987Bragg001Theta", ",", "plotFit"}], "]"}]}], " ", 
+       RowBox[{"plot987Bragg001Theta", ",", "plotFit", ",", 
+        RowBox[{"Frame", "\[Rule]", "True"}], ",", 
+        RowBox[{"FrameLabel", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"Style", "[", 
+            RowBox[{
+            "\"\<Q (\!\(\*SuperscriptBox[\(\[Angstrom]\), \(-1\)]\))\>\"", 
+             ",", "16", ",", "Bold"}], "]"}], ",", 
+           RowBox[{"Style", "[", 
+            RowBox[{
+            "\"\<Reflectivity (counts/sec)\>\"", ",", "16", ",", "Bold"}], 
+            "]"}]}], "}"}]}]}], "]"}]}], " ", 
      RowBox[{"(*", 
       RowBox[{
       "put", " ", "Manipulate", " ", "plot", " ", "first", " ", "so", " ", 
@@ -1366,14 +1369,258 @@ final-q.txt\>\"", ",", " ", "\"\<Table\>\""}], "]"}]}], " ", ";"}],
    3.739811121171178*^9}, {3.7398168277340307`*^9, 3.7398168418253126`*^9}, {
    3.740140017747917*^9, 3.740140344181449*^9}, {3.740140380456175*^9, 
    3.7401404159108844`*^9}, {3.7402396008349257`*^9, 3.740239601244934*^9}, {
-   3.7403985642910614`*^9, 3.740398584038456*^9}, 
-   3.741698911061449*^9},ExpressionUUID->"2f69b8ce-0cd8-44a6-b9a9-\
+   3.7403985642910614`*^9, 3.740398584038456*^9}, 3.741698911061449*^9, {
+   3.741705226094018*^9, 
+   3.7417052297740917`*^9}},ExpressionUUID->"2f69b8ce-0cd8-44a6-b9a9-\
 14b936cbef4e"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`dBiFeO3$$ = 4.072, $CellContext`dCobalt$$ = 
+    4.09, $CellContext`delBiFeO3$$ = 0.001, $CellContext`delCo$$ = 
+    0.001, $CellContext`delSrRuO3$$ = 2.201, $CellContext`delSrTiO3$$ = 
+    0.201, $CellContext`densBFO$$ = 0.098864, $CellContext`densCo$$ = 
+    0.09, $CellContext`densPt$$ = 0.066, $CellContext`densSRO$$ = 
+    0.082706, $CellContext`densSTO$$ = 
+    0.08399999999999999, $CellContext`dPlatinum$$ = 
+    3.9200000000000004`, $CellContext`dSrRuO3$$ = 
+    3.97, $CellContext`dSrTiO3$$ = 3.904, $CellContext`layerNum$$ = 
+    4, $CellContext`mBiFeO3$$ = 157, $CellContext`mCo$$ = 
+    28, $CellContext`mPt$$ = 69, $CellContext`mSrRuO3$$ = 
+    53, $CellContext`mSrTiO3$$ = 500, $CellContext`nBiFeO3$$ = 
+    142.645, $CellContext`nCo$$ = 23.900000000000002`, $CellContext`nPt$$ = 
+    68.04, $CellContext`nSrRuO3$$ = 52.5, $CellContext`nSrTiO3$$ = 
+    498.99, $CellContext`pointsPlotted$$ = 200, $CellContext`polFactor$$ = 
+    3200, $CellContext`qFin$$ = 1.8, $CellContext`qInit$$ = 1.4, 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`layerNum$$], 1, "Layers Considered"}, {1, 2, 3, 4, 
+      5}}, {{
+       Hold[$CellContext`pointsPlotted$$], 200, "Points Plotted"}, 1, 1000, 
+      1}, {{
+       Hold[$CellContext`qInit$$], 1.4, "Q Initial"}, 0.01, 90, 0.01}, {{
+       Hold[$CellContext`qFin$$], 1.8, "Q Final"}, 0.02, 100, 0.1}, {{
+       Hold[$CellContext`polFactor$$], 4230, "Pol Factor"}, 1, 10000, 1}, {
+      Hold[
+       Style["\!\(\*SubscriptBox[\(SrTiO\), \(3\)]\)", 12, Bold]], 
+      Manipulate`Dump`ThisIsNotAControl}, {{
+       Hold[$CellContext`dSrTiO3$$], 3.905, "Lattice Const"}, 0.1, 14, 
+      0.01}, {{
+       Hold[$CellContext`densSTO$$], 0.08396, "Avg # Density"}, 
+      Rational[1, 100], 
+      Rational[1, 5], 0.0005}, {{
+       Hold[$CellContext`nSrTiO3$$], 500, 
+       "\!\(\*OverscriptBox[\(N\), \(_\)]\)"}, 1, 600, 0.1}, {{
+       Hold[$CellContext`mSrTiO3$$], 500, "M"}, 1, 600, 1}, {{
+       Hold[$CellContext`delSrTiO3$$], 0.2264, "\[CapitalDelta]"}, 0.001, 6., 
+      0.1}, {
+      Hold[
+       Style["\!\(\*SubscriptBox[\(SrRuO\), \(3\)]\)", 12, Bold]], 
+      Manipulate`Dump`ThisIsNotAControl}, {{
+       Hold[$CellContext`dSrRuO3$$], 3.964, "Lattice Const"}, 0.1, 14, 
+      0.01}, {{
+       Hold[$CellContext`densSRO$$], 0.050272, "Avg # Density"}, 
+      Rational[1, 100], 
+      Rational[1, 5], 0.0005}, {{
+       Hold[$CellContext`nSrRuO3$$], 54.014, 
+       "\!\(\*OverscriptBox[\(N\), \(_\)]\)"}, 1, 600, 0.1}, {{
+       Hold[$CellContext`mSrRuO3$$], 56, "M"}, 1, 600, 1}, {{
+       Hold[$CellContext`delSrRuO3$$], 2.292, "\[CapitalDelta]"}, 0.001, 6., 
+      0.1}, {
+      Hold[
+       Style["\!\(\*SubscriptBox[\(BiFeO\), \(3\)]\)", 12, Bold]], 
+      Manipulate`Dump`ThisIsNotAControl}, {{
+       Hold[$CellContext`dBiFeO3$$], 4.072, "Lattice Const"}, 0.1, 14, 
+      0.01}, {{
+       Hold[$CellContext`densBFO$$], 0.098864, "Avg # Density"}, 
+      Rational[1, 100], 
+      Rational[1, 5], 0.0005}, {{
+       Hold[$CellContext`nBiFeO3$$], 142.645, 
+       "\!\(\*OverscriptBox[\(N\), \(_\)]\)"}, 1, 600, 0.1}, {{
+       Hold[$CellContext`mBiFeO3$$], 157, "M"}, 1, 600, 1}, {{
+       Hold[$CellContext`delBiFeO3$$], 4.09, "\[CapitalDelta]"}, 0.001, 6., 
+      0.1}, {
+      Hold[
+       Style["Co", 12, Bold]], Manipulate`Dump`ThisIsNotAControl}, {{
+       Hold[$CellContext`dCobalt$$], 4.089, "Lattice Const"}, 0.1, 14, 
+      0.01}, {{
+       Hold[$CellContext`densCo$$], 0.089969, "Avg # Density"}, 
+      Rational[1, 100], 
+      Rational[1, 5], 0.0005}, {{
+       Hold[$CellContext`nCo$$], 23.97, 
+       "\!\(\*OverscriptBox[\(N\), \(_\)]\)"}, 1, 600, 0.1}, {{
+       Hold[$CellContext`mCo$$], 24, "M"}, 1, 600, 1}, {{
+       Hold[$CellContext`delCo$$], 1., "\[CapitalDelta]"}, 0.001, 6., 0.1}, {
+      Hold[
+       Style["Pt", 12, Bold]], Manipulate`Dump`ThisIsNotAControl}, {{
+       Hold[$CellContext`dPlatinum$$], 3.924, "Lattice Const"}, 0.1, 14, 
+      0.01}, {{
+       Hold[$CellContext`densPt$$], 0.066214, "Avg # Density"}, 
+      Rational[1, 100], 
+      Rational[1, 5], 0.0005}, {{
+       Hold[$CellContext`nPt$$], 68.04, 
+       "\!\(\*OverscriptBox[\(N\), \(_\)]\)"}, 1, 600, 0.1}, {{
+       Hold[$CellContext`mPt$$], 69, "M"}, 1, 600, 1}}, Typeset`size$$ = {
+    1004., {447., 453.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`layerNum$6471011$$ = 
+    0, $CellContext`pointsPlotted$6471012$$ = 
+    0, $CellContext`qInit$6471013$$ = 0, $CellContext`qFin$6471014$$ = 
+    0, $CellContext`polFactor$6471015$$ = 0, $CellContext`dSrTiO3$6471016$$ = 
+    0, $CellContext`densSTO$6471017$$ = 0, $CellContext`nSrTiO3$6471018$$ = 
+    0, $CellContext`mSrTiO3$6471019$$ = 0, $CellContext`delSrTiO3$6471020$$ = 
+    0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`dBiFeO3$$ = 4.072, $CellContext`dCobalt$$ = 
+        4.089, $CellContext`delBiFeO3$$ = 4.09, $CellContext`delCo$$ = 
+        1., $CellContext`delSrRuO3$$ = 2.292, $CellContext`delSrTiO3$$ = 
+        0.2264, $CellContext`densBFO$$ = 0.098864, $CellContext`densCo$$ = 
+        0.089969, $CellContext`densPt$$ = 0.066214, $CellContext`densSRO$$ = 
+        0.050272, $CellContext`densSTO$$ = 0.08396, $CellContext`dPlatinum$$ = 
+        3.924, $CellContext`dSrRuO3$$ = 3.964, $CellContext`dSrTiO3$$ = 
+        3.905, $CellContext`layerNum$$ = 1, $CellContext`mBiFeO3$$ = 
+        157, $CellContext`mCo$$ = 24, $CellContext`mPt$$ = 
+        69, $CellContext`mSrRuO3$$ = 56, $CellContext`mSrTiO3$$ = 
+        500, $CellContext`nBiFeO3$$ = 142.645, $CellContext`nCo$$ = 
+        23.97, $CellContext`nPt$$ = 68.04, $CellContext`nSrRuO3$$ = 
+        54.014, $CellContext`nSrTiO3$$ = 500, $CellContext`pointsPlotted$$ = 
+        200, $CellContext`polFactor$$ = 4230, $CellContext`qFin$$ = 
+        1.8, $CellContext`qInit$$ = 1.4}, "ControllerVariables" :> {
+        Hold[$CellContext`layerNum$$, $CellContext`layerNum$6471011$$, 0], 
+        Hold[$CellContext`pointsPlotted$$, \
+$CellContext`pointsPlotted$6471012$$, 0], 
+        Hold[$CellContext`qInit$$, $CellContext`qInit$6471013$$, 0], 
+        Hold[$CellContext`qFin$$, $CellContext`qFin$6471014$$, 0], 
+        Hold[$CellContext`polFactor$$, $CellContext`polFactor$6471015$$, 0], 
+        Hold[$CellContext`dSrTiO3$$, $CellContext`dSrTiO3$6471016$$, 0], 
+        Hold[$CellContext`densSTO$$, $CellContext`densSTO$6471017$$, 0], 
+        Hold[$CellContext`nSrTiO3$$, $CellContext`nSrTiO3$6471018$$, 0], 
+        Hold[$CellContext`mSrTiO3$$, $CellContext`mSrTiO3$6471019$$, 0], 
+        Hold[$CellContext`delSrTiO3$$, $CellContext`delSrTiO3$6471020$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, 
+      "Body" :> ($CellContext`dSpace = {$CellContext`dSrTiO3$$, \
+$CellContext`dSrRuO3$$, $CellContext`dBiFeO3$$, $CellContext`dCobalt$$, \
+$CellContext`dPlatinum$$}; $CellContext`rho = {$CellContext`densSTO$$, \
+$CellContext`densSRO$$, $CellContext`densBFO$$, $CellContext`densCo$$, \
+$CellContext`densPt$$}; $CellContext`nBar = {$CellContext`nSrTiO3$$, \
+$CellContext`nSrRuO3$$, $CellContext`nBiFeO3$$, $CellContext`nCo$$, \
+$CellContext`nPt$$}; $CellContext`mL = {$CellContext`mSrTiO3$$, \
+$CellContext`mSrRuO3$$, $CellContext`mBiFeO3$$, $CellContext`mCo$$, \
+$CellContext`mPt$$}; $CellContext`deltaL = {$CellContext`delSrTiO3$$, \
+$CellContext`delSrRuO3$$, $CellContext`delBiFeO3$$, $CellContext`delCo$$}; \
+$CellContext`qRange = {$CellContext`q, $CellContext`qInit$$, \
+$CellContext`qFin$$}; $CellContext`plotFit = Plot[
+          $CellContext`rSpec[$CellContext`q, $CellContext`polFactor$$, \
+$CellContext`eRad, $CellContext`layerNum$$, $CellContext`rho, \
+$CellContext`dSpace, $CellContext`formFactor, $CellContext`mL, \
+$CellContext`nBar, $CellContext`deltaL], $CellContext`qRange, 
+          PlotPoints -> $CellContext`pointsPlotted$$, 
+          MaxRecursion -> $CellContext`plotPointRecursion, 
+          ScalingFunctions -> $CellContext`scaling, 
+          ImageSize -> $CellContext`imageDimensions, PlotLegends -> {"fit"}]; 
+       Show[$CellContext`plot987Bragg001Theta, $CellContext`plotFit, Frame -> 
+         True, FrameLabel -> {
+           Style[
+           "Q (\!\(\*SuperscriptBox[\(\[Angstrom]\), \(-1\)]\))", 16, Bold], 
+           Style["Reflectivity (counts/sec)", 16, Bold]}]), 
+      "Specifications" :> {{{$CellContext`layerNum$$, 1, 
+          "Layers Considered"}, {1, 2, 3, 4, 5}}, 
+        Delimiter, {{$CellContext`pointsPlotted$$, 200, "Points Plotted"}, 1, 
+         1000, 1}, 
+        Delimiter, {{$CellContext`qInit$$, 1.4, "Q Initial"}, 0.01, 90, 
+         0.01}, {{$CellContext`qFin$$, 1.8, "Q Final"}, 0.02, 100, 0.1}, 
+        Delimiter, {{$CellContext`polFactor$$, 4230, "Pol Factor"}, 1, 10000, 
+         1, Appearance -> {"Open"}}, Delimiter, 
+        Style[
+        "\!\(\*SubscriptBox[\(SrTiO\), \(3\)]\)", 12, 
+         Bold], {{$CellContext`dSrTiO3$$, 3.905, "Lattice Const"}, 0.1, 14, 
+         0.01, Appearance -> {"Open"}}, {{$CellContext`densSTO$$, 0.08396, 
+          "Avg # Density"}, 
+         Rational[1, 100], 
+         Rational[1, 5], 0.0005, 
+         Appearance -> {"Open"}}, {{$CellContext`nSrTiO3$$, 500, 
+          "\!\(\*OverscriptBox[\(N\), \(_\)]\)"}, 1, 600, 0.1, 
+         Appearance -> {"Open"}}, {{$CellContext`mSrTiO3$$, 500, "M"}, 1, 600,
+          1, Appearance -> {"Open"}}, {{$CellContext`delSrTiO3$$, 0.2264, 
+          "\[CapitalDelta]"}, 0.001, 6., 0.1, Appearance -> {"Open"}}, 
+        Delimiter, 
+        Style[
+        "\!\(\*SubscriptBox[\(SrRuO\), \(3\)]\)", 12, 
+         Bold], {{$CellContext`dSrRuO3$$, 3.964, "Lattice Const"}, 0.1, 14, 
+         0.01, 
+         Appearance -> {"Open"}}, {{$CellContext`densSRO$$, 0.050272, 
+          "Avg # Density"}, 
+         Rational[1, 100], 
+         Rational[1, 5], 0.0005, 
+         Appearance -> {"Open"}}, {{$CellContext`nSrRuO3$$, 54.014, 
+          "\!\(\*OverscriptBox[\(N\), \(_\)]\)"}, 1, 600, 0.1, 
+         Appearance -> {"Open"}}, {{$CellContext`mSrRuO3$$, 56, "M"}, 1, 600, 
+         1, Appearance -> {"Open"}}, {{$CellContext`delSrRuO3$$, 2.292, 
+          "\[CapitalDelta]"}, 0.001, 6., 0.1, Appearance -> {"Open"}}, 
+        Delimiter, 
+        Style[
+        "\!\(\*SubscriptBox[\(BiFeO\), \(3\)]\)", 12, 
+         Bold], {{$CellContext`dBiFeO3$$, 4.072, "Lattice Const"}, 0.1, 14, 
+         0.01, Appearance -> {"Open"}}, {{$CellContext`densBFO$$, 0.098864, 
+          "Avg # Density"}, 
+         Rational[1, 100], 
+         Rational[1, 5], 0.0005, 
+         Appearance -> {"Open"}}, {{$CellContext`nBiFeO3$$, 142.645, 
+          "\!\(\*OverscriptBox[\(N\), \(_\)]\)"}, 1, 600, 0.1, 
+         Appearance -> {"Open"}}, {{$CellContext`mBiFeO3$$, 157, "M"}, 1, 600,
+          1, Appearance -> {"Open"}}, {{$CellContext`delBiFeO3$$, 4.09, 
+          "\[CapitalDelta]"}, 0.001, 6., 0.1, Appearance -> {"Open"}}, 
+        Delimiter, 
+        Style[
+        "Co", 12, Bold], {{$CellContext`dCobalt$$, 4.089, "Lattice Const"}, 
+         0.1, 14, 0.01, 
+         Appearance -> {"Open"}}, {{$CellContext`densCo$$, 0.089969, 
+          "Avg # Density"}, 
+         Rational[1, 100], 
+         Rational[1, 5], 0.0005, 
+         Appearance -> {"Open"}}, {{$CellContext`nCo$$, 23.97, 
+          "\!\(\*OverscriptBox[\(N\), \(_\)]\)"}, 1, 600, 
+         0.1}, {{$CellContext`mCo$$, 24, "M"}, 1, 600, 
+         1}, {{$CellContext`delCo$$, 1., "\[CapitalDelta]"}, 0.001, 6., 0.1}, 
+        Delimiter, 
+        Style[
+        "Pt", 12, Bold], {{$CellContext`dPlatinum$$, 3.924, "Lattice Const"}, 
+         0.1, 14, 0.01, 
+         Appearance -> {"Open"}}, {{$CellContext`densPt$$, 0.066214, 
+          "Avg # Density"}, 
+         Rational[1, 100], 
+         Rational[1, 5], 0.0005, 
+         Appearance -> {"Open"}}, {{$CellContext`nPt$$, 68.04, 
+          "\!\(\*OverscriptBox[\(N\), \(_\)]\)"}, 1, 600, 
+         0.1}, {{$CellContext`mPt$$, 69, "M"}, 1, 600, 1}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{1330., {726., 733.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Input",
+ CellChangeTimes->{{3.7417081367452574`*^9, 
+  3.741708167328869*^9}},ExpressionUUID->"b6554d95-9b17-44a9-8046-\
+5352f07336fa"],
 
 Cell[BoxData[""], "Input",
  CellChangeTimes->{{3.7392135925405917`*^9, 
   3.739213597301592*^9}},ExpressionUUID->"67898cce-54a1-4e53-9fa9-\
 534e70cfc89b"],
+
+Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{
@@ -1499,6 +1746,34 @@ Cell[BoxData[
   3.739292788708671*^9}},ExpressionUUID->"8aba7e97-d8c2-4e22-aaa6-\
 b4580198f797"],
 
+Cell[BoxData[
+ TagBox[GridBox[{
+    {"\<\"Physical Parameters\"\>", "\<\"STO\"\>", "\<\"SRO\"\>", \
+"\<\"BFO\"\>", "\<\"Co\"\>"},
+    {"\<\"Thickness (\[Angstrom])\"\>", "1948.05696`", "208.425`", 
+     "580.85044`", "98.03729999999999`"},
+    {"\<\"Roughness (\[Angstrom])\"\>", "3.9195067331382556`", 
+     "2.793940967893823`", "14.705771657259422`", "7.59680243991322`"},
+    {"\<\"Delta Spacing (\[Angstrom])\"\>", "0.201`", "2.201`", "0.001`", 
+     "0.001`"}
+   },
+   AutoDelete->False,
+   GridBoxAlignment->{"Columns" -> {{Center}}},
+   GridBoxBackground->{"Columns" -> {
+       RGBColor[0.65, 0.65, 0.65], None}, "Rows" -> {
+       GrayLevel[0.85], None}},
+   GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+   GridBoxItemStyle->{"Columns" -> {{
+        Directive[FontSize -> 20]}}, "Rows" -> {{
+        Directive[FontSize -> 20]}}}],
+  "Grid"]], "Output",
+ CellChangeTimes->{
+  3.741705271365924*^9, {3.741707915665654*^9, 
+   3.741707959993541*^9}},ExpressionUUID->"4cba28bd-16c1-4446-b733-\
+23c855549dd7"]
+}, Open  ]],
+
 Cell[CellGroupData[{
 
 Cell[BoxData[
@@ -1603,15 +1878,35 @@ Cell[BoxData[
        "141.4343042236008`", ",", "167", ",", "2.5645270154872657`", ",", 
        "4.072`", ",", "0.10375208558908963`", ",", "23.97`", ",", "36", ",", 
        "1.`", ",", "4.089`", ",", "0.089969`", ",", "0.066214`", ",", 
-       "3.924`", ",", "3446.`"}], "}"}]}], "*)"}]}]}]], "Input",
+       "3.924`", ",", "3446.`"}], "}"}]}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{
+     RowBox[{"7", "/", "26"}], " ", "still", " ", "about", " ", "the", " ", 
+     "best", " ", "fit", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+        "3.904`", ",", "3.97`", ",", "4.072`", ",", "4.089`", ",", "3.924`"}],
+         "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{
+        "498.8999999999998`", ",", "52.5`", ",", "142.645`", ",", "23.97`", 
+         ",", "68.04`"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"500", ",", "53", ",", "157", ",", "24", ",", "69"}], "}"}], 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{"0.201`", ",", "2.201`", ",", "0.001`", ",", "1.`"}], "}"}]}],
+       "}"}]}], "*)"}]}]}]], "Input",
  CellChangeTimes->{{3.739544796067892*^9, 3.7395448206433835`*^9}, {
   3.739880551798168*^9, 3.7398805529781923`*^9}, {3.7402409197688065`*^9, 
-  3.7402409873021593`*^9}},ExpressionUUID->"f60b178b-e894-4fca-8bdd-\
+  3.7402409873021593`*^9}, {3.7417061854366217`*^9, 
+  3.7417062047480087`*^9}},ExpressionUUID->"f60b178b-e894-4fca-8bdd-\
 a3cd8e7f2fb2"]
 },
-Evaluator->"2ndKernel",
 WindowSize->{1920, 1038},
-WindowMargins->{{1912, Automatic}, {Automatic, -8}},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
 Magnification:>0.9 Inherited,
 FrontEndVersion->"11.1 for Microsoft Windows (64-bit) (April 18, 2017)",
 StyleDefinitions->Notebook[{
@@ -1631,23 +1926,29 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 1812, 38, 119, "Input", "ExpressionUUID" -> \
+Cell[558, 20, 2056, 41, 119, "Input", "ExpressionUUID" -> \
 "826eb94b-1e00-4e42-9258-969cd4a289c6"],
-Cell[2373, 60, 58452, 1310, 3701, "Input", "ExpressionUUID" -> \
+Cell[2617, 63, 58492, 1311, 3699, "Input", "ExpressionUUID" -> \
 "2f69b8ce-0cd8-44a6-b9a9-14b936cbef4e"],
-Cell[60828, 1372, 154, 3, 28, "Input", "ExpressionUUID" -> \
+Cell[61112, 1376, 12972, 239, 1475, InheritFromParent, "ExpressionUUID" -> \
+"b6554d95-9b17-44a9-8046-5352f07336fa"],
+Cell[74087, 1617, 154, 3, 28, "Input", "ExpressionUUID" -> \
 "67898cce-54a1-4e53-9fa9-534e70cfc89b"],
-Cell[60985, 1377, 4391, 122, 227, "Input", "ExpressionUUID" -> \
-"8aba7e97-d8c2-4e22-aaa6-b4580198f797"],
 Cell[CellGroupData[{
-Cell[65401, 1503, 891, 19, 47, "Input", "ExpressionUUID" -> \
+Cell[74266, 1624, 4391, 122, 227, "Input", "ExpressionUUID" -> \
+"8aba7e97-d8c2-4e22-aaa6-b4580198f797"],
+Cell[78660, 1748, 1103, 25, 108, "Output", "ExpressionUUID" -> \
+"4cba28bd-16c1-4446-b733-23c855549dd7"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[79800, 1778, 891, 19, 47, "Input", "ExpressionUUID" -> \
 "8ea61b1a-d71b-462a-a836-88210097ac04"],
-Cell[66295, 1524, 764, 20, 21, "Print", "ExpressionUUID" -> \
+Cell[80694, 1799, 764, 20, 21, "Print", "ExpressionUUID" -> \
 "01a05bc1-9aa8-4423-80a5-e1c595791d5a"]
 }, Open  ]],
-Cell[67074, 1547, 154, 3, 28, "Input", "ExpressionUUID" -> \
+Cell[81473, 1822, 154, 3, 28, "Input", "ExpressionUUID" -> \
 "12699e27-117a-4456-bbf6-0c43df04e741"],
-Cell[67231, 1552, 2316, 57, 101, "Input", "ExpressionUUID" -> \
+Cell[81630, 1827, 3090, 78, 119, "Input", "ExpressionUUID" -> \
 "f60b178b-e894-4fca-8bdd-a3cd8e7f2fb2"]
 }
 ]

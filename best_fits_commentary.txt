@@ -1,0 +1,8 @@
+Comments on fit of STO/SRO/BFO/Co/Pt sample b987:
+
+Best fit so far: 
+{{3.904`, 3.97`, 4.072`, 4.089`, 3.924`}, {498.8999999999998`, 52.5`, 142.645`, 23.97`, 68.04`}, {500, 53, 157, 24, 69}, {0.201`, 2.201`, 0.001`, 1.`}}
+
+This characterization of the thin film still does not resolve our main issue: fitting the SRO Bragg peak. Other than this one large feature, however, these parameters
+in the model fit the data better than past attempts. This characterization could still be improved on with the nonlinear least squares fitting, but this will
+give minutely better parameters. The least squares fitting will not address the large SRO peak.
